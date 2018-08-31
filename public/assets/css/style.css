@@ -1,0 +1,59 @@
+h1{
+  font-family: 'Baloo Tammudu', cursive;
+  padding: 10px;
+  color: red;
+};
+
+h3{
+  font-family: 'Didact Gothic', sans-serif;
+  font-size: 30px;
+  color: red
+}
+
+/*deovour button style */
+.btn_devour{
+  background:white;
+  color:red;
+  font-family: 'Paytone One', sans-serif;
+  font-size: 25px;
+  margin: 5px;
+  padding: 5px;
+  width: 75px;
+  
+}
+#burger-in{
+  position: left;
+
+}
+
+
+.container-fluid{
+  align-content: center;
+
+}
+
+#submit-btn{
+  padding: 10 px;
+}
+
+#logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+
+
+
+#devoured{
+  font-family: 'Didact Gothic', sans-serif, ;
+  font-size: 20px;
+text-align: center;
+ padding: 5px;
+  top: 80px;
+  left: 25;
+  background: yellow;
+  width: 250px;
+  height: 100px;
+  border: 3px solid #73AD21;
+}

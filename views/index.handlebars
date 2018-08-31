@@ -1,0 +1,45 @@
+<div class= "container-fluid">
+<div class= "container">
+    <div class= "row">
+       
+        <div class= "col-sm-6 text-center" class "task">
+            <div class= "row" id="burger-in">
+                {{#each burger_data}}
+                    {{#unless this.devoured}}
+                    <div class="col-sm-9 text-center">
+                        <pre id="burger_title">{{this.id}}.{{this.burger_name}}</pre>
+                    </div>
+            <div class= "col-sm-3 text-center" id= "btn-burger-list">
+                <form method= "POST" action="/burger/update?_method=PUT" class="button-size">
+                <input type= "hidden" name= "burger_id" type= "text" value= {{this.id}}>
+                <br>
+                <button type="submit" class="btn_devour">Devour it!
+                </button>
+                </form>
+           
+            </div>
+            {{/unless}}
+            {{/each}}
+            </div>
+            <div class ="col-sm-6 text-center" class ="task">
+                {{#each burger_data}}
+                    {{#if this.devoured}}
+                        <input class ="form-control" class= "col-md-4 offset-md-4" id= "devoured" type ="text" placeholder = "{{this.id}}.{{this.burger_name}}" readonly>
+                        {{/if}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    <div class= "container">
+        <div class="row">
+            <div class="col-sm-12 text-center enter_section">
+                <form action="/burger/create" method="POST">
+                    <input type="text" name="burger_name" class= "form-control" value="" id="enter_text">
+                    <button type="submit" class="btn btn-primary" id="submit-btn">SUBMIT</button>
+                </form>
+                <p>What type of burger are you digging!? get creative! </p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
